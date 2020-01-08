@@ -5,8 +5,10 @@
  * Discription: Pair Program 1**/
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
-
+$number=array(7,9,8,9,8,8,6);
+include "function.php";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,5 +17,8 @@ error_reporting(E_ALL);
 </head>
 <body>
 <h1>Pair Program 1</h1>
+<?php
+printArr($number);
+?>
 </body>
 </html>

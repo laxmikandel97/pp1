@@ -6,3 +6,18 @@ function printArr($array)
         echo $item."<br>";
     }
 }
+
+function largest($array)
+{
+    $max= 0;
+    foreach ($array as $item)
+    {
+        if($item>$max)
+        {
+            $max=$item;
+        }
+    }
+    return $max;
+
+
+}

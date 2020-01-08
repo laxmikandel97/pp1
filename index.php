@@ -19,6 +19,8 @@ include "function.php";
 <h1>Pair Program 1</h1>
 <?php
 printArr($number);
+$storeMax=largest($number);
+echo "The largest number is: $storeMax";
 ?>
 </body>
 </html>

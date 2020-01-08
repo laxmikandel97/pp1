@@ -8,7 +8,6 @@ error_reporting(E_ALL);
 $number = array(7, 9, 8, 9, 8, 8, 6);
 include "function.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +22,13 @@ $storeMax = largest($number);
 echo "The largest number is: $storeMax<br>";
 echo "The unique numbers are: ";
 $uniqueNumbers = removeDups($number);
-foreach($uniqueNumbers as $num)
-{
-    echo $num ."\n";
+foreach ($uniqueNumbers as $num) {
+    echo $num . "\n";
 }
-
+echo "<br>";
+$arrayCount = distribution($number);
+echo "Distribution of array: ";
+print_r($arrayCount);
 ?>
 </body>
 </html>

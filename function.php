@@ -24,3 +24,10 @@ function largest($array)
 //        var_dump($array);
         return array_unique($array);
     }
+
+    //returns associative array with each value form the original array and number of times it appear in the array
+    function distribution($array)
+    {
+    return array_count_values($array);
+
+    }
